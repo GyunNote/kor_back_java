@@ -41,6 +41,7 @@ public class Operation05 {
         System.out.println("결과 : " + result) ;
         scan.close();
         scan.close();
+        System.out.println("테스트코드작성");
 
 
         /* 다른 방법 ==>   String result   =    x== 0 || y==0 ? "오류"
