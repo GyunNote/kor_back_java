@@ -1,4 +1,4 @@
-package com.study.ch06;
+package com.study.ch06.Forstar;
 
 import java.util.Scanner;
 
