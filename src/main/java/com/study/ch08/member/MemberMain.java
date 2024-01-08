@@ -11,12 +11,12 @@ public class MemberMain {
         String selectedMenu = null;
 
         while(true){
+
             System.out.println("[[회원관리 프로그램]]");
             System.out.println("1. 회원 등록");
             System.out.println("2. 회원 전체 조회");
             System.out.println("q. 프로그램 종료하기");
             System.out.print("메뉴선택 >>> ");
-
             selectedMenu = scanner.nextLine();
 
             if("1".equals(selectedMenu)){
@@ -32,6 +32,7 @@ public class MemberMain {
                     System.out.println("더 이상 등록이 불가능 합니다");
                     continue;
                 }
+
                 boolean responseData = memberService.addMember(members);
                 if (responseData) {
                     System.out.println("<<< 등록완료 >>>");

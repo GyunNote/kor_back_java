@@ -44,7 +44,7 @@ public class MemberService {
             return false;
         }
         //member 라는 Member객체 생성
-        Member member = new Member(code,name , Integer.parseInt(age), address);
+        Member member = new Member(code,name,Integer.parseInt(age),address);
 
         MemberRepository memberRepository = new MemberRepository();
         return memberRepository.insert(members,member) > 0;

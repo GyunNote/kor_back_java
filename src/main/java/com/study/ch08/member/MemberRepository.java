@@ -14,5 +14,4 @@ public class MemberRepository {
         System.out.println(member.toString());
         return 1;
     }
-
 }
