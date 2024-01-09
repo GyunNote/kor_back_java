@@ -15,7 +15,7 @@ public class Function2 {
         System.out.println("이름 : " + name);
         System.out.println();
     }
-    public static int fx03(){
+    public static int fx03(){             // static 을 지우려면 밑에서 Function2를 새로 만들어주고 그걸 fx03를 쓰는곳에서 참조해주기
         System.out.println("fx03함수실행");
         return 100;
 
@@ -28,6 +28,7 @@ public class Function2 {
     public static void main(String[] args) {
         fx01();
         fx02(27 , "김도균");
+        Function2 function2 = new Function2();
 
         int num = fx03();
         System.out.println(fx03());
